@@ -1,6 +1,8 @@
 eureka:
   instance:
     prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds:    2
   client:
     fetch-registry: true
     register-with-eureka: true
